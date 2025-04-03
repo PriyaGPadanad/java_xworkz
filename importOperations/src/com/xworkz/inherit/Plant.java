@@ -10,5 +10,7 @@ public class Plant {
     public void photosynthesize(){
         System.out.println("Plant photosynthesizing");
     }
-
+    public void breathe(){
+        System.out.println("plant breathing");
+    }
 }

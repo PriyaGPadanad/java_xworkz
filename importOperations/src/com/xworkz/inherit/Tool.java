@@ -10,4 +10,7 @@ public class Tool {
     public void maintain(){
         System.out.println("Tool being maintained");
     }
+    public void clean(){
+        System.out.println("Tool cleaned");
+    }
 }

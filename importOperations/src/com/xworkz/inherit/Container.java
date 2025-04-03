@@ -10,4 +10,12 @@ public class Container {
     public void empty(){
         System.out.println("container emptied");
     }
+    public void retrieve(){
+        System.out.println("container retrieving");
+    }
+    public void fill(){
+        System.out.println("Container filled");
+    }
+
+
 }

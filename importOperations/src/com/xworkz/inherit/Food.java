@@ -12,5 +12,10 @@ public class Food {
     public void serve(){
         System.out.println("Serving food");
     }
-
+    public void cook(){
+        System.out.println("Food cooked");
+    }
+    public void eat(){
+        System.out.println("food eaten");
+    }
 }

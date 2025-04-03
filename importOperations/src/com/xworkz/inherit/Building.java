@@ -10,4 +10,7 @@ public class Building {
     public void demolish(){
         System.out.println("Building demolishing");
     }
+    public void maintain(){
+        System.out.println("Building maintained");
+    }
 }

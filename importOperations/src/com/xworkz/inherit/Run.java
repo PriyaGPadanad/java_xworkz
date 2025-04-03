@@ -1,6 +1,7 @@
 package com.xworkz.inherit;
 
 public class Run {
+
     public static void main(String[] args){
         Car car=new Car();
         car.type();
@@ -128,6 +129,186 @@ public class Run {
         storage.unpack();
         storage.store();
         storage.empty();
+
+        Apple grannySmith=new Apple();
+        grannySmith.peel();
+        grannySmith.slice();
+        grannySmith.eat();
+        grannySmith.ripen();
+
+        Doctor john=new Doctor();
+        john.work();
+        john.diagnose();
+        john.earn();
+        john.prescribe();
+
+        Screwdriver screw=new Screwdriver();
+        screw.loosen();
+        screw.tighten();
+        screw.use();
+        screw.maintain();
+
+        Piano grandPiano=new Piano();
+        grandPiano.pressKeys();
+        grandPiano.sustainPedal();
+        grandPiano.play();
+        grandPiano.tune();
+
+        Sword katana =new Sword();
+        katana.slash();
+        katana.thrust();
+        katana.attack();
+        katana.defend();
+
+        Basketball game=new Basketball();
+        game.dribble();
+        game.shoot();
+        game.compete();
+        game.play();
+
+        Juice orangeJuice=new Juice();
+        orangeJuice.blend();
+        orangeJuice.squeeze();
+        orangeJuice.consume();
+        orangeJuice.prepare();
+
+        Java code=new Java();
+        code.run();
+        code.compile();
+        code.speak();
+        code.write();
+
+        Paper novel=new Paper();
+        novel.read();
+        novel.publish();
+        novel.summarize();
+        novel.review();
+
+        Printer laserPrinter=new Printer();
+        laserPrinter.printDocument();
+        laserPrinter.scanDocument();
+        laserPrinter.turnOff();
+        laserPrinter.turnOn();
+
+        Bag travelBag=new Bag();
+        travelBag.carry();
+        travelBag.retrieve();
+        travelBag.fold();
+        travelBag.store();
+
+        Fabric cotton =new Fabric();
+        cotton.dye();
+        cotton.weave();
+        cotton.inspect();
+        cotton.process();
+
+        Painting landscape=new Painting();
+        landscape.frame();
+        landscape.restore();
+        landscape.create();
+        landscape.display();
+
+        Email workEmail=new Email();
+        workEmail.forward();
+        workEmail.reply();
+        workEmail.receive();
+        workEmail.send();
+
+        Skyscraper tallBuilding=new Skyscraper();
+        tallBuilding.elevate();
+        tallBuilding.illuminate();
+        tallBuilding.maintain();
+        tallBuilding.construct();
+
+        Application webApp=new Application();
+        webApp.install();
+        webApp.uninstall();
+        webApp.run();
+        webApp.update();
+
+        Truck bigTruck=new Truck();
+        bigTruck.loadCargo();
+        bigTruck.unloadCargo();
+        bigTruck.start();
+        bigTruck.stop();
+
+        Tree oakTree=new Tree();
+        oakTree.breathe();
+        oakTree.shedLeaves();
+        oakTree.produceFruit();
+        oakTree.grow();
+
+        Dessert iceCream=new Dessert();
+        iceCream.cook();
+        iceCream.eat();
+        iceCream.sweeten();
+        iceCream.chill();
+
+        Robot industrialRobot=new Robot();
+        industrialRobot.move();
+        industrialRobot.process();
+        industrialRobot.maintain();
+        industrialRobot.operate();
+
+        Drum snare=new Drum();
+        snare.beat();
+        snare.tuneSkin();
+        snare.tune();
+        snare.play();
+
+        Wrench adjustable =new Wrench();
+        adjustable.clean();
+        adjustable.loosenNut();
+        adjustable.tightenBolt();
+        adjustable.use();
+
+        Dolphin flipper=new Dolphin();
+        flipper.move();
+        flipper.breathe();
+        flipper.echolocate();
+        flipper.swim();
+
+        Tennis match=new Tennis();
+        match.play();
+        match.compete();
+        match.volley();
+        match.serve();
+
+        Tea greenTea=new Tea();
+        greenTea.consume();
+        greenTea.steep();
+        greenTea.addMilk();
+        greenTea.prepare();
+
+        Python script=new Python();
+        script.debug();
+        script.execute();
+        script.interpret();
+        script.read();
+
+        Bottle waterBottle=new Bottle();
+        waterBottle.seal();
+        waterBottle.fill();
+        waterBottle.pour();
+        waterBottle.empty();
+
+        Glass window =new Glass();
+        window.melt();
+        window.temper();
+        window.polish();
+        window.shape();
+
+        SavingsAccount savings=new SavingsAccount();
+        savings.deposit(100.0);
+        savings.calculateInterest();
+
+        Video movie=new Video();
+        movie.play();
+        movie.rewind();
+
+
+
+
 
 
 
