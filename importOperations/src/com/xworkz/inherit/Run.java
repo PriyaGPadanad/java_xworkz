@@ -306,6 +306,90 @@ public class Run {
         movie.play();
         movie.rewind();
 
+        Router router=new Router();
+        router.routePackets();
+        router.connect();
+        router.disconnect();
+
+        Triangle tri=new Triangle();
+        tri.remove();
+        tri.draw();
+        tri.display();
+        tri.resize();
+        tri.area();
+
+        SQLQuery sql=new SQLQuery();
+        sql.executeSql();
+        sql.format();
+        sql.parse();
+        sql.cancel();
+        sql.validate();
+
+        Refrigerator fridge =new Refrigerator();
+        fridge.openDoor();
+        fridge.closeDoor();
+        fridge.cool();
+        fridge.defrost();
+        fridge.store();
+
+        StrategyGame chess=new StrategyGame();
+        chess.plan();
+        chess.endGame();
+        chess.pauseGame();
+        chess.restartGame();
+        chess.play();
+
+        Item plate =new Item();
+        plate.discard();
+        plate.sharpen();
+        plate.inspect();
+        plate.store();
+
+        PDFDocument pdf = new PDFDocument();
+        pdf.open();
+        pdf.render();
+
+        FileSystem fs = new FileSystem();
+        fs.operate();
+        fs.manageFiles();
+
+        ScheduledTask task = new ScheduledTask();
+        task.execute();
+        task.schedule();
+
+        WebService webService = new WebService();
+        webService.provide();
+        webService.handleRequest();
+
+        Audio sound = new Audio();
+        sound.play();
+        sound.adjustVolume();
+
+        Firewall firewall = new Firewall();
+        firewall.transmit();
+        firewall.blockTraffic();
+
+        Polygon poly = new Polygon();
+        poly.draw();
+        poly.calculatePerimeter();
+
+        DataSet dataSet = new DataSet();
+        dataSet.process();
+        dataSet.analyze();
+
+        StorageUnit unit = new StorageUnit();
+        unit.store();
+        unit.organize();
+
+        BoardGame boardGame = new BoardGame();
+        boardGame.play();
+        boardGame.setRules();
+
+
+
+
+
+
 
 
 
