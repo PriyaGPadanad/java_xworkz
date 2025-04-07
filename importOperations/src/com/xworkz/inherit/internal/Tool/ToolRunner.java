@@ -79,87 +79,7 @@ public class ToolRunner {
             tool10.getDurability();
             System.out.println("------------------");
 
-            AllenWrench tool1 = new AllenWrench();
-            tool1.use();
-            tool1.getMaterial();
-            tool1.getCategory();
-            tool1.getPurpose();
-            tool1.getDurability();
-            System.out.println("---------------");
-
-            StudFinder tool2 = new StudFinder();
-            tool2.use();
-            tool2.getMaterial();
-            tool2.getCategory();
-            tool2.getPurpose();
-            tool2.getDurability();
-            System.out.println("---------------");
-
-            Sledgehammer tool3 = new Sledgehammer();
-            tool3.use();
-            tool3.getMaterial();
-            tool3.getCategory();
-            tool3.getPurpose();
-            tool3.getDurability();
-            System.out.println("---------------");
-
-            Level tool4 = new Level();
-            tool4.use();
-            tool4.getMaterial();
-            tool4.getCategory();
-            tool4.getPurpose();
-            tool4.getDurability();
-            System.out.println("---------------");
-
-            Plunger tool5 = new Plunger();
-            tool5.use();
-            tool5.getMaterial();
-            tool5.getCategory();
-            tool5.getPurpose();
-            tool5.getDurability();
-            System.out.println("---------------");
-
-            CaulkingGun tool6 = new CaulkingGun();
-            tool6.use();
-            tool6.getMaterial();
-            tool6.getCategory();
-            tool6.getPurpose();
-            tool6.getDurability();
-            System.out.println("---------------");
-
-            Hacksaw tool7 = new Hacksaw();
-            tool7.use();
-            tool7.getMaterial();
-            tool7.getCategory();
-            tool7.getPurpose();
-            tool7.getDurability();
-            System.out.println("---------------");
-
-            WireStripper tool8 = new WireStripper();
-            tool8.use();
-            tool8.getMaterial();
-            tool8.getCategory();
-            tool8.getPurpose();
-            tool8.getDurability();
-            System.out.println("---------------");
-
-            PaintRoller tool9 = new PaintRoller();
-            tool9.use();
-            tool9.getMaterial();
-            tool9.getCategory();
-            tool9.getPurpose();
-            tool9.getDurability();
-            System.out.println("---------------");
-
-            Chisel tool10 = new Chisel();
-            tool10.use();
-            tool10.getMaterial();
-            tool10.getCategory();
-            tool10.getPurpose();
-            tool10.getDurability();
-            System.out.println("---------------");
-
-            MeasuringTape tool11 = new MeasuringTape();
+            AllenWrench tool11 = new AllenWrench();
             tool11.use();
             tool11.getMaterial();
             tool11.getCategory();
@@ -167,7 +87,7 @@ public class ToolRunner {
             tool11.getDurability();
             System.out.println("---------------");
 
-            Spade tool12 = new Spade();
+            StudFinder tool12 = new StudFinder();
             tool12.use();
             tool12.getMaterial();
             tool12.getCategory();
@@ -175,7 +95,7 @@ public class ToolRunner {
             tool12.getDurability();
             System.out.println("---------------");
 
-            HoseNozzle tool13 = new HoseNozzle();
+            Sledgehammer tool13 = new Sledgehammer();
             tool13.use();
             tool13.getMaterial();
             tool13.getCategory();
@@ -183,7 +103,7 @@ public class ToolRunner {
             tool13.getDurability();
             System.out.println("---------------");
 
-            Trowel tool14 = new Trowel();
+            Level tool14 = new Level();
             tool14.use();
             tool14.getMaterial();
             tool14.getCategory();
@@ -191,7 +111,7 @@ public class ToolRunner {
             tool14.getDurability();
             System.out.println("---------------");
 
-            Multimeter tool15 = new Multimeter();
+            Plunger tool15 = new Plunger();
             tool15.use();
             tool15.getMaterial();
             tool15.getCategory();
@@ -199,7 +119,7 @@ public class ToolRunner {
             tool15.getDurability();
             System.out.println("---------------");
 
-            ScrewExtractor tool16 = new ScrewExtractor();
+            CaulkingGun tool16 = new CaulkingGun();
             tool16.use();
             tool16.getMaterial();
             tool16.getCategory();
@@ -207,7 +127,7 @@ public class ToolRunner {
             tool16.getDurability();
             System.out.println("---------------");
 
-            Sandpaper tool17 = new Sandpaper();
+            Hacksaw tool17 = new Hacksaw();
             tool17.use();
             tool17.getMaterial();
             tool17.getCategory();
@@ -215,7 +135,7 @@ public class ToolRunner {
             tool17.getDurability();
             System.out.println("---------------");
 
-            WorkGloves tool18 = new WorkGloves();
+            WireStripper tool18 = new WireStripper();
             tool18.use();
             tool18.getMaterial();
             tool18.getCategory();
@@ -223,7 +143,7 @@ public class ToolRunner {
             tool18.getDurability();
             System.out.println("---------------");
 
-            ChainSaw tool19 = new ChainSaw();
+            PaintRoller tool19 = new PaintRoller();
             tool19.use();
             tool19.getMaterial();
             tool19.getCategory();
@@ -231,12 +151,92 @@ public class ToolRunner {
             tool19.getDurability();
             System.out.println("---------------");
 
-            Wheelbarrow tool20 = new Wheelbarrow();
+            Chisel tool20 = new Chisel();
             tool20.use();
             tool20.getMaterial();
             tool20.getCategory();
             tool20.getPurpose();
             tool20.getDurability();
+            System.out.println("---------------");
+
+            MeasuringTape tool21 = new MeasuringTape();
+            tool21.use();
+            tool21.getMaterial();
+            tool21.getCategory();
+            tool21.getPurpose();
+            tool21.getDurability();
+            System.out.println("---------------");
+
+            Spade tool22= new Spade();
+            tool22.use();
+            tool22.getMaterial();
+            tool22.getCategory();
+            tool22.getPurpose();
+            tool22.getDurability();
+            System.out.println("---------------");
+
+            HoseNozzle tool23 = new HoseNozzle();
+            tool23.use();
+            tool23.getMaterial();
+            tool23.getCategory();
+            tool23.getPurpose();
+            tool23.getDurability();
+            System.out.println("---------------");
+
+            Trowel tool24 = new Trowel();
+            tool24.use();
+            tool24.getMaterial();
+            tool24.getCategory();
+            tool24.getPurpose();
+            tool24.getDurability();
+            System.out.println("---------------");
+
+            Multimeter tool25 = new Multimeter();
+            tool25.use();
+            tool25.getMaterial();
+            tool25.getCategory();
+            tool25.getPurpose();
+            tool25.getDurability();
+            System.out.println("---------------");
+
+            ScrewExtractor tool26 = new ScrewExtractor();
+            tool26.use();
+            tool26.getMaterial();
+            tool26.getCategory();
+            tool26.getPurpose();
+            tool26.getDurability();
+            System.out.println("---------------");
+
+            Sandpaper tool27 = new Sandpaper();
+            tool27.use();
+            tool27.getMaterial();
+            tool27.getCategory();
+            tool27.getPurpose();
+            tool27.getDurability();
+            System.out.println("---------------");
+
+            WorkGloves tool28 = new WorkGloves();
+            tool28.use();
+            tool28.getMaterial();
+            tool28.getCategory();
+            tool28.getPurpose();
+            tool28.getDurability();
+            System.out.println("---------------");
+
+            ChainSaw tool29 = new ChainSaw();
+            tool29.use();
+            tool29.getMaterial();
+            tool29.getCategory();
+            tool29.getPurpose();
+            tool29.getDurability();
+            System.out.println("---------------");
+
+            Wheelbarrow tool30 = new Wheelbarrow();
+            tool30.use();
+            tool30.getMaterial();
+            tool30.getCategory();
+            tool30.getPurpose();
+            tool30.getDurability();
             System.out.println("---------------");
 
         }

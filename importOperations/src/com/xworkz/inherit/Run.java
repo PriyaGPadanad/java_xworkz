@@ -88,12 +88,6 @@ public class Run {
         rect.calculateArea();
         rect.calculatePerimeter();
 
-        Bicycle bike =new Bicycle();
-        bike.move();
-        bike.pedal();
-        bike.stop();
-        bike.ringBell();
-
         Lion leo = new Lion();
         leo.eat();
         leo.sleep();
@@ -349,9 +343,6 @@ public class Run {
         pdf.open();
         pdf.render();
 
-        FileSystem fs = new FileSystem();
-        fs.operate();
-        fs.manageFiles();
 
         ScheduledTask task = new ScheduledTask();
         task.execute();
