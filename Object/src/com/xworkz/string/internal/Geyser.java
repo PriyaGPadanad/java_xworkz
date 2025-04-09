@@ -1,0 +1,18 @@
+package com.xworkz.string.internal;
+
+public class Geyser {
+    private String brand;
+    private int capacity;
+    private boolean instantHeat;
+
+    public Geyser(String brand, int capacity, boolean instantHeat) {
+        this.brand = brand;
+        this.capacity = capacity;
+        this.instantHeat = instantHeat;
+    }
+
+    @Override
+    public String toString() {
+        return "Geyser [brand=" + brand + ", capacity=" + capacity + "L, instant=" + instantHeat + "]";
+    }
+}

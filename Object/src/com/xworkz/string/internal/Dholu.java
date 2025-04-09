@@ -1,0 +1,18 @@
+package com.xworkz.string.internal;
+
+public class Dholu {
+    private String twinName;
+    private boolean followsKalia;
+    private int comedyLevel;
+
+    public Dholu(String twinName, boolean followsKalia, int comedyLevel) {
+        this.twinName = twinName;
+        this.followsKalia = followsKalia;
+        this.comedyLevel = comedyLevel;
+    }
+
+    @Override
+    public String toString() {
+        return "Dholu [twinName=" + twinName + ", followsKalia=" + followsKalia + ", comedyLevel=" + comedyLevel + "]";
+    }
+}
