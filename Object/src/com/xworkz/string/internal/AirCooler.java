@@ -15,4 +15,8 @@ public class AirCooler {
     public String toString() {
         return "AirCooler [brand=" + brand + ", tankCapacity=" + tankCapacity + "L, remote=" + hasRemote + "]";
     }
+    @Override
+    public int hashCode(){
+        return 96;
+    }
 }

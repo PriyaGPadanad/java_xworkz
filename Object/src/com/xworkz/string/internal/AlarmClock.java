@@ -14,5 +14,12 @@ public class AlarmClock {
     @Override
     public String toString() {
         return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
+
+
     }
+    @Override
+    public int hashCode(){
+        return 966;
+    }
+
 }
