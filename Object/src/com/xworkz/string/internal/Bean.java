@@ -15,30 +15,20 @@ public class Bean {
     public String toString() {
         return "Bean [fullName=" + fullName + ", favoriteItem=" + favoriteItem + ", drivesMiniCar=" + drivesMiniCar + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 789;
         }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Bean) {
+            Bean other = (Bean) obj;
+            return this.fullName.equals(other.fullName);
+        }
+        return false;
     }
+
+
 
 }

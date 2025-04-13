@@ -15,30 +15,21 @@ public class Coaster {
     public String toString() {
         return "Coaster [design=" + design + ", material=" + material + ", reusable=" + isReusable + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 7788;
         }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Coaster) {
+            Coaster other = (Coaster) obj;
+            return this.design.equals(other.design);
+        }
+        return false;
     }
 
 }
+
+

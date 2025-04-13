@@ -15,30 +15,20 @@ public class CoffeeMug {
     public String toString() {
         return "CoffeeMug [color=" + color + ", capacity=" + capacityInMl + "ml, microwaveSafe=" + isMicrowaveSafe + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 5678;
         }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof CoffeeMug) {
+            CoffeeMug other = (CoffeeMug) obj;
+            return this.color.equals(other.color);
+        }
+        return false;
     }
 
 }
+

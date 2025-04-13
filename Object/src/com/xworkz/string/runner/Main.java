@@ -1,7 +1,6 @@
 package com.xworkz.string.runner;
 
 import com.xworkz.string.internal.*;
-import jdk.management.cmm.SystemResourcePressureMXBean;
 
 public class Main {
     public static void main(String[] args) {
@@ -115,7 +114,7 @@ public class Main {
         System.out.println("Original:"+System.identityHashCode(rc));
         System.out.println("-------------------------------------------------------");
 
-        AlarmClock alarmClock = new AlarmClock("Digital", true, true);
+        AlarmClocks alarmClock = new AlarmClocks("Digital", true, true);
         System.out.println(alarmClock);
         System.out.println(alarmClock.hashCode());
         System.out.println("Original:"+System.identityHashCode(alarmClock));

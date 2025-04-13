@@ -15,30 +15,20 @@ public class DoorMat {
     public String toString() {
         return "DoorMat [material=" + material + ", color=" + color + ", washable=" + isWashable + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 89734;
         }
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof DoorMat) {
+            DoorMat other = (DoorMat) obj;
+            return this.material.equals(other.material) && this.color.equals(other.color);
+        }
+        return false;
     }
-
 }
+
+
+

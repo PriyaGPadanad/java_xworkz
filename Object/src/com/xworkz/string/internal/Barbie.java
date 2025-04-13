@@ -15,31 +15,22 @@ public class Barbie {
     public String toString() {
         return "Barbie [profession=" + profession + ", outfitColor=" + outfitColor + ", hasDreamHouse=" + hasDreamHouse + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 456;
         }
 
+        @Override
+        public boolean equals(Object obj) {
+            if (obj instanceof Barbie) {
+                Barbie other = (Barbie) obj;
+                return this.profession.equals(other.profession);
+            }
+            return false;
+        }
+
     }
 
-}
+
 
