@@ -15,30 +15,21 @@ public class Kalia {
     public String toString() {
         return "Kalia [rival=" + rival + ", egoLevel=" + egoLevel + ", isScaredOfBheem=" + isScaredOfBheem + "]";
     }
-    package com.xworkz.string.internal;
-
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
 
 
-        }
         @Override
         public int hashCode(){
             return 96432;
         }
+        @Override
+    public boolean equals(Object obj){
+        if(obj instanceof Kalia){
+            Kalia other=(Kalia)obj;
+            return this.rival.equals(other.rival) && this.egoLevel==(other.egoLevel);
+        }
+        return false;
+        }
 
     }
 
-}
+
