@@ -15,30 +15,21 @@ public class HotChocolate {
     public String toString() {
         return "HotChocolate [cupSize=" + cupSize + ", hasMarshmallows=" + hasMarshmallows + ", milkType=" + milkType + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 13452;
         }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof HotChocolate) {
+            HotChocolate other = (HotChocolate) obj;
+            return this.cupSize.equals(other.cupSize) &&
+                    this.milkType.equals(other.milkType);
+        }
+        return false;
+    }
     }
 
-}
+
