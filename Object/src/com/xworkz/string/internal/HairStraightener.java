@@ -15,30 +15,22 @@ public class HairStraightener {
     public String toString() {
         return "HairStraightener [brand=" + brand + ", temp=" + tempRange + "°C, ceramic=" + ceramicCoating + "]";
     }
-    package com.xworkz.string.internal;
-
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
 
 
-        }
         @Override
         public int hashCode(){
             return 4364;
         }
 
+        @Override
+    public boolean equals(Object obj){
+        if(obj instanceof HairStraightener){
+            HairStraightener other=(HairStraightener) obj;
+            return this.brand.equals(other.brand) && this.ceramicCoating==other.ceramicCoating;
+        }
+        return false;
+        }
+
     }
 
-}
+

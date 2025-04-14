@@ -15,30 +15,20 @@ public class Headphones {
     public String toString() {
         return "Headphones [type=" + type + ", wireless=" + isWireless + ", color=" + color + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 7676;
         }
 
+        @Override
+    public boolean equals(Object obj){
+        if(obj instanceof Headphones){
+            Headphones other=(Headphones)obj;
+            return this.type.equals(other.type)&& this.color.equals(other.color);
+        }
+        return false;
     }
-
 }
+
+

@@ -15,30 +15,21 @@ public class Geyser {
     public String toString() {
         return "Geyser [brand=" + brand + ", capacity=" + capacity + "L, instant=" + instantHeat + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 99789;
         }
 
+        @Override
+        public boolean equals(Object obj) {
+            if (obj instanceof Geyser) {
+                Geyser other = (Geyser) obj;
+                return this.brand.equals(other.brand) && this.capacity==other.capacity;
+            }
+            return false;
+        }
+
     }
 
-}
+

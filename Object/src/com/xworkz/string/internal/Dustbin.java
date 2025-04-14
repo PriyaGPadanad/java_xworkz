@@ -15,30 +15,21 @@ public class Dustbin {
     public String toString() {
         return "Dustbin [capacity=" + capacity + "L, lid=" + hasLid + ", color=" + color + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 8906;
         }
 
+        @Override
+        public boolean equals(Object obj) {
+            if (obj instanceof Dustbin) {
+                Dustbin other = (Dustbin) obj;
+                return this.color.equals(other.color) && this.hasLid==other.hasLid;
+            }
+            return false;
+        }
+
     }
 
-}
+

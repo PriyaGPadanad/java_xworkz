@@ -15,30 +15,20 @@ public class ElectricKettle {
     public String toString() {
         return "ElectricKettle [brand=" + brand + ", capacity=" + capacity + "L, autoShutOff=" + autoShutOff + "]";
     }
-    package com.xworkz.string.internal;
 
-    public class AlarmClock {
-        private String type;
-        private boolean snooze;
-        private boolean batteryBackup;
-
-        public AlarmClock(String type, boolean snooze, boolean batteryBackup) {
-            this.type = type;
-            this.snooze = snooze;
-            this.batteryBackup = batteryBackup;
-        }
-
-        @Override
-        public String toString() {
-            return "AlarmClock [type=" + type + ", snooze=" + snooze + ", batteryBackup=" + batteryBackup + "]";
-
-
-        }
         @Override
         public int hashCode(){
             return 96675;
         }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof ElectricKettle) {
+            ElectricKettle other = (ElectricKettle) obj;
+            return this.brand.equals(other.brand) && this.capacity==other.capacity;
+        }
+        return false;
     }
 
-}
+    }
+
