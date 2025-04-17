@@ -1,6 +1,6 @@
 package com.xworkz.string.internal;
 
-public class Toaster {
+public abstract class Toaster {
     private String brand;
     private int sliceCapacity;
     private boolean defrostMode;
@@ -15,6 +15,8 @@ public class Toaster {
     public String toString() {
         return "Toaster [brand=" + brand + ", sliceCapacity=" + sliceCapacity + ", defrostMode=" + defrostMode + "]";
     }
+
+    public abstract void toast();
     package com.xworkz.string.internal;
 
     public class AlarmClock {
