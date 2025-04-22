@@ -4,7 +4,7 @@ import com.xworkz.interfaces.defaultimpli.*;
 import com.xworkz.interfaces.defaultinterface.*;
 
 public class InterfaceRunner {
-    Toaster toaster=new SmartToaster();
+    Toaster toaster= (Toaster) new SmartToaster();
     toaster.toast();
 
     COffeeGrinder grinder=new ElectricGrinder();
