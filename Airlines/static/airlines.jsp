@@ -29,50 +29,15 @@
 
 </nav>
 
-<form action="airlines" method="post">
+<form action="airlines" method="get">
+
     <div class="mb-3">
-        <label for="id" class="form-label">Id</label>
-        <input type="number" class="form-control" id="id" name="id">
-    </div>
-    <div class="mb-3">
-        <label for="name" class="form-label">Airlines Name</label>
-        <input type="text" class="form-control" id="name" name="name">
-    </div>
-    <div class="mb-3">
-        <label for="source" class="form-label">Source</label>
-        <input type="text" class="form-control" id="source" name="source">
-    </div>
-    <div class="mb-3">
-        <label for="destination" class="form-label">Destination</label>
-        <input type="text" class="form-control" id="destination" name="destination">
-    </div>
-    <div class="mb-3">
-        <label for="flight code" class="form-label">Flight Code</label>
-        <input type="text" class="form-control" id="flight code" name="flightCode">
-    </div>
-    <div class="mb-3">
-        <label for="class type" class="form-label">Class Type</label>
-        <input type="text" class="form-control" id="class type" name="classType">
-    </div>
-    <div class="mb-3">
-        <label for="meal Type" class="form-label">Meal Type</label>
-        <input type="text" class="form-control" id="meal type" name="mealType">
-    </div>
-    <label>International</label>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" value="yes">
-        <label class="form-check-label" for="radioDefault1">
-            Yes
-        </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" value="no">
-        <label class="form-check-label" for="radioDefault2">
-            No
-        </label>
+        <label for="id" class="form-label">Airlines Id</label>
+        <input type="text" class="form-control" id="id" name="id">
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+
+    <button type="submit" class="btn btn-primary">Search</button>
 </form>
 </body>
 </html>

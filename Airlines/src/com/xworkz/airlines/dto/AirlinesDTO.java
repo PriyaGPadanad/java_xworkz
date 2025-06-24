@@ -14,11 +14,9 @@ public class AirlinesDTO implements Serializable {
     private String international;
 
 
+   public AirlinesDTO(String name, String source, String destination, String flightCode, String classType, String mealType, String international) {
 
 
-   public AirlinesDTO(int id,String name,String source, String destination,String flightCode,String classType,String mealType,String international) {
-
-       this.id=id;
        this.name=name;
        this.source=source;
        this.destination=destination;
@@ -28,13 +26,8 @@ public class AirlinesDTO implements Serializable {
        this.international=international;
    }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public String getName() {
         return name;
@@ -90,5 +83,26 @@ public class AirlinesDTO implements Serializable {
 
     public void setInternational(String international) {
         this.international = international;
+    }
+
+    @Override
+    public String toString() {
+        return "AirlinesDTO{" +
+                ", name='" + name + '\'' +
+                ", source='" + source + '\'' +
+                ", destination='" + destination + '\'' +
+                ", flightCode='" + flightCode + '\'' +
+                ", classType='" + classType + '\'' +
+                ", mealType='" + mealType + '\'' +
+                ", international='" + international + '\'' +
+                '}';
+    }
+
+    public void setId(int pk) {
+       this.id=id;
+    }
+
+    public int getId() {
+        return id;
     }
 }
